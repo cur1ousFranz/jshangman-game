@@ -29,6 +29,9 @@ function start(){
 
     document.getElementById('start-button').disabled = true;
     document.getElementById('keyboard').style.visibility = 'visible';
+    entries = "";
+    document.getElementById('entries').innerHTML = entries;
+    document.getElementById('entries').style.visibility = "visible";
 }
 
 function inputCheck(letter){
@@ -67,6 +70,9 @@ function inputCheck(letter){
             }
 
             document.getElementById('keyboard').style.visibility = 'hidden';
+            entries = "";
+            document.getElementById('entries').innerHTML = entries;
+            document.getElementById('entries').style.visibility = "hidden";
             
         }
 
@@ -91,41 +97,13 @@ function inputCheck(letter){
                     right_leg.style.visibility = "visible";
                     break;
         }
-        
+
+        entries += letter + ",";
+        document.getElementById('entries').innerHTML = entries.toUpperCase();
     }
 
-    entries += letter + ",";
-    document.getElementById('entries').innerHTML = entries.toUpperCase();
-
 }
-function btnQ(){ inputCheck("q"); }
-function btnW(){ inputCheck("w"); }
-function btnE(){ inputCheck("e"); }
-function btnR(){ inputCheck("r"); }
-function btnT(){ inputCheck("t"); }
-function btnY(){ inputCheck("y"); }
-function btnU(){ inputCheck("u"); }
-function btnI(){ inputCheck("i"); }
-function btnO(){ inputCheck("o"); }
-function btnP(){ inputCheck("p"); }
 
-function btnA(){ inputCheck("a"); }
-function btnS(){ inputCheck("s"); }
-function btnD(){ inputCheck("d"); }
-function btnF(){ inputCheck("f"); }
-function btnG(){ inputCheck("g"); }
-function btnH(){ inputCheck("h"); }
-function btnJ(){ inputCheck("j"); }
-function btnK(){ inputCheck("k"); }
-function btnL(){ inputCheck("l"); }
-
-function btnZ(){ inputCheck("z"); }
-function btnX(){ inputCheck("x"); }
-function btnC(){ inputCheck("c"); }
-function btnV(){ inputCheck("v"); }
-function btnB(){ inputCheck("b"); }
-function btnN(){ inputCheck("n"); }
-function btnM(){ inputCheck("m"); }
 
 
 
