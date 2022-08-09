@@ -26,7 +26,7 @@ function start(){
             hiddenWord.appendChild(h2)
 
     }
-
+    
     document.getElementById('start-button').disabled = true;
     document.getElementById('keyboard').style.visibility = 'visible';
     entries = "";
